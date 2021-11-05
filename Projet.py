@@ -1,11 +1,9 @@
 #!/bin/env python3 
 
-import PyPDF2
 import requests
 import os
 from bs4 import BeautifulSoup
 from PyPDF2 import PdfFileReader 
-import urlextract 
 
 
 class Ressource():
@@ -39,7 +37,7 @@ class Ressource():
                 for i in range(npage):
                     page = pdf.getPage(i)
                     self.texte += page.extractText() 
-                    """self.tou = self.texte.encode('utf-8')"""
+                    
             
                 
 class Collecte(Ressource):  
