@@ -12,16 +12,16 @@ une_ressource.type()
 une_ressource.text()
 print(une_ressource.texte)
 """
-"""
 
+"""
 u = [u1,u2]
 une_collecte = Collecte(u)
 une_collecte.run()
-une_collecte.content()
+print(une_collecte.content())
+"""
 
 
-
-
+"""
 le_traitement = Traitement()
 le_traitement.load(une_collecte.textes)
 le_traitement.run()         # génère le résultat
