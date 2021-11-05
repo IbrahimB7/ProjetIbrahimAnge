@@ -1,9 +1,6 @@
 #!/bin/env python3
 
-from classe import Ressource 
-from classe import Collecte
-from classe import Traitement
-from classe import Prisme 
+from Projet import *
 
 u1 = "http://math.univ-angers.fr"
 u2 = "https://math.univ-angers.fr/documents/exercices_terminale_septembre_2014.pdf"
