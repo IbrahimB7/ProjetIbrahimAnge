@@ -40,7 +40,7 @@ class Ressource():
                     
             
                 
-class Collecte(Ressource):  
+class Collecte():  
     def __init__(self, urls):
         self.urls = urls
         self.ressources = []
@@ -58,7 +58,7 @@ class Collecte(Ressource):
         return self.textes
     
 
-class Traitement(Collecte):
+class Traitement():
     def __init__(self):
         self.Traitement=[]
 
@@ -75,7 +75,7 @@ class Traitement(Collecte):
     def show(self):
         print(self.nombre)
 
-class Prisme(Traitement):
+class Prisme():
     def __init__(self,Traitement):
         self.T = Traitement
 
