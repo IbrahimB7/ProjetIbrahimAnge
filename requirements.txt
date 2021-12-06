@@ -1,0 +1,14 @@
+les modules à installer (si ce n'est pas déjà fait)
+
+pip install bs4 (BeautifulSoup)
+pip install pdfminer.six (le .six est important pour l'importation du from pdfminer.high_level import extract_text)
+pip install requests
+pip install requests_html 
+pip install wordcloud 
+pip install PyMuPDF ( fitz, ne pas installer le module fitz directement, il peut y avoir des problèmes)
+
+
+maconfig.py est le fichier de configuration,
+les pages html et pdf sont à ajouter dans le file "maconfig.py" dans "urls=[]"  
+
+
