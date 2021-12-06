@@ -1,7 +1,10 @@
-#!/bin/env python3
-from Projet2 import Prisme
-"""Avant de commencer, il faut créer un fichier texte 'text.txt' dans le dossier avec tous les liens"""
+#!/bin/env python3 
+from Projet import Prisme
+from maconfig import *
+
+'''Lire le fichier requirements.txt pour voir les modules à pip install'''
+
 un_prisme = Prisme('Nuage')
-un_prisme.run('text.txt')
+un_prisme.run(urls)
 un_prisme.show()
 
