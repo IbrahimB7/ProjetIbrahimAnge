@@ -27,7 +27,7 @@ class Ressource():
         self.url = url
         self.request = requests.get(self.url)
         self.contenu = self.request.headers.get('content-type')
-        if 'pdf' in self.contenu:
+        if 'pdf' in self.contenu: #recupere le type de fichier HTML ou PDF
             self.objet = 'PDF'
         elif 'html' in self.contenu:
             self.objet = 'HTML'    
@@ -71,7 +71,8 @@ class Ressource():
         
         if self.objet == "PDF":
 
-            '''Pour récupérer les images, il faut d'abord que l'on télécharge le fichier PDF dans le fichier actuel comme on ne peut pas extraire les liens des images d'un PDF comme on le ferait avec une page HTML'''
+            '''Pour récupérer les images, il faut d'abord que l'on télécharge le fichier PDF dans le fichier actuel, 
+            contrairement à l'html on ne peut pas extraire les liens des images d'un PDF comme on le ferait avec une page HTML'''
             self.imgurls = ['PDF']
             pathlib.Path('image/PDF').mkdir(parents=False, exist_ok=True) #Fichier ou on va stocker les images du PDF
             path = os.getcwd() #obtient le chemin du fichier
