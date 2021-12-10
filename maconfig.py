@@ -12,5 +12,6 @@ navigateurpath = None  #Navigateur par défaut choisi, remplacer None par 'PATH'
 mots_exclus = ['de']  #Ecrire les mots à exclure entre ''  
 nombre_mots = 100 #Choisir le nombre de mot à avoir dans le nuage de mot
 couleur_fond = 'white' #Choisir la couleur du fond 
-
+font_size = 50 #change la taille de la police
+"""Si aucun changement n'ont été remarqué lors du changement de ces variables, il est nécessaire d'actualiser la page nuages.html sur le navigateur (f5)"""
 
