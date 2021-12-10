@@ -37,7 +37,7 @@ class Ressource():
 
     def text(self):
         pathlib.Path('WordCloud').mkdir(parents=False, exist_ok=True) #Création du fichier image, ou l'on va stocker les nuages de mots
-        if self.objet == 'HTML':
+        if self.objet == 'HTML': #Pris du programme de Tasli-Legruel 
             soup = BeautifulSoup(self.request.text,'html.parser')
             for s in soup.select('script'):
                 s.extract()
@@ -67,7 +67,7 @@ class Ressource():
                 self.imgurls.append(url)
 
             session.close()
-            return self.imgurls #renvoi liste d'url
+            return self.imgurls #renvoi liste d'url des images
         
         if self.objet == "PDF":
 
