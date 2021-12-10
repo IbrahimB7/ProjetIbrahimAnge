@@ -134,7 +134,7 @@ class Traitement():
         self.wordcloud = []        
         k=0 
         for i in self.fichiers:   #crée un nuage par texte         
-            wordcloud = WordCloud(background_color=couleur_fond,stopwords = mots_exclus, max_words=nombre_mots,max_font_size=50).generate(i)   #Paramètre variables, à modifier dans maconfig.py     
+            wordcloud = WordCloud(background_color=couleur_fond,stopwords = mots_exclus, max_words=nombre_mots,max_font_size=font_size).generate(i)   #Paramètre variables, à modifier dans maconfig.py     
             save_dir = f"WordCloud/{k}.png"     #enregistre un nuage dans le nuage        
             wordcloud.to_file(save_dir)
             self.wordcloud.append(save_dir) #on ajoute le chemin du fichier image du nuage a la liste pour le show 
