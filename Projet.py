@@ -207,7 +207,9 @@ class Prisme():
     def __init__(self,traitement):
         self.traitement = traitement
 
-    def run(self,urls):        
+    def run(self,urls): 
+        if os.path.exists('image'):
+            shutil.rmtree('image')
         collecte = Collecte(urls)
         if self.traitement=='Nuage':
             collecte.run()
