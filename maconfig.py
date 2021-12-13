@@ -4,6 +4,7 @@
 
 
 urls = ['https://math.univ-angers.fr/','https://math.univ-angers.fr/documents/exercices_terminale_septembre_2014.pdf']  #Liste de liens 
+'''Après avoir changer les urls au dessus, il peut que la page html allimgs.html ne s'actualisent pas. Si ce n'est pas le cas, il faut actualiser manuellement la page '''
 
 navigateurpath = None  #Navigateur par défaut choisi, remplacer None par 'PATH' avec PATH le chemin du navigateur à choisir (Ne semble pas fonctionner sur windows?)
 
