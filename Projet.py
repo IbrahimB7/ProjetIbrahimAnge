@@ -209,7 +209,7 @@ class Prisme():
         self.traitement = traitement
 
     def run(self,urls): 
-        if os.path.exists('image'):
+        if os.path.exists('image'): #ces deux lignes suppriment les fichier images afin de recommencer les collectes d'images sans avoir de soucis avec les images collectés précédemment
             shutil.rmtree('image')
         collecte = Collecte(urls)
         if self.traitement=='Nuage':
